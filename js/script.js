@@ -21,7 +21,7 @@ function getRope(event){
         audio.currentTime = 0;
         audio.play()
     }else{
-        // valor tipdo como false (tecla não existe);
+        // valor tido como false (tecla não existe);
     }    
 }
 function rope(event){
