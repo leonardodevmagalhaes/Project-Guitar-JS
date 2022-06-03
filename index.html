@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar JS .: Um projeto simples para se divertir!</title>
+    <link rel="icon" href="./images/icon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="Guitarra dinânica para se divertir tocando">
+    <meta name="keywords" content="guitarra, musica, instrumento musical, javascript">
+    <meta name="author" content="Leonardo Magalhães">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Josefin+Slab&display=swap" rel="stylesheet">
+
+    <!-- Biblioteca de animações -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+</head>
+<body>
+
+    <!-- TITLE OF THE PAGE -->
+
+    <header>
+        <h1>Guitar JS</h1>
+    </header>
+
+    <!-- SECTION MAIN WITH ROPES OF THE GUITAR -->
+
+    <section class="guitar">
+
+        <div class="ropes">
+            <div class="rope" data-rope="a" ></div>
+            <div class="rope" data-rope="s" ></div>
+            <div class="rope" data-rope="d" ></div>
+            <div class="rope" data-rope="f" ></div>
+            <div class="rope" data-rope="g" ></div>
+        </div>
+
+    </section>
+
+    <!-- SECTION EXTRA WITH INFORMATIONS ABOUT BUTTONS -->
+
+    <section class="informations">
+        <p>Click on ropes or press on keyborad:</p>
+        <div class="information_buttons">
+            <div class="keys">G</div>
+            <div class="keys">F</div>
+            <div class="keys">D</div>
+            <div class="keys">S</div>
+            <div class="keys">A</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Leonardo developer FrontEnd</p>
+    </footer>
+
+    <section class="sonuds">
+        <audio src="./sounds/song05.mp3" data-rope="a" ></audio>
+        <audio src="./sounds/song04.mp3" data-rope="s" ></audio>
+        <audio src="./sounds/song03.mp3" data-rope="d" ></audio>
+        <audio src="./sounds/song02.mp3" data-rope="f" ></audio>
+        <audio src="./sounds/song01.mp3" data-rope="g" ></audio>
+    </section>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

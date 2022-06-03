@@ -1,0 +1,132 @@
+
+/* General Settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
+    color: #fff;
+}
+div.keys, section.informations p{
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    color: #fff;
+    animation: flipInY 1s;
+}
+footer p{
+    margin-top: 25px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    color: #fff;
+    animation: flipInY 1s;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(230deg, rgba(93, 93, 93, 0.03) 0%, rgba(93, 93, 93, 0.03) 50%,rgba(78, 78, 78, 0.03) 50%, rgba(78, 78, 78, 0.03) 100%),linear-gradient(107deg, rgba(55, 55, 55, 0.01) 0%, rgba(55, 55, 55, 0.01) 50%,rgba(170, 170, 170, 0.01) 50%, rgba(170, 170, 170, 0.01) 100%),linear-gradient(278deg, rgba(16, 16, 16, 0.03) 0%, rgba(16, 16, 16, 0.03) 50%,rgba(24, 24, 24, 0.03) 50%, rgba(24, 24, 24, 0.03) 100%),linear-gradient(205deg, rgba(116, 116, 116, 0.03) 0%, rgba(116, 116, 116, 0.03) 50%,rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.03) 100%),linear-gradient(150deg, rgba(5, 5, 5, 0.03) 0%, rgba(5, 5, 5, 0.03) 50%,rgba(80, 80, 80, 0.03) 50%, rgba(80, 80, 80, 0.03) 100%),linear-gradient(198deg, rgba(231, 231, 231, 0.03) 0%, rgba(231, 231, 231, 0.03) 50%,rgba(26, 26, 26, 0.03) 50%, rgba(26, 26, 26, 0.03) 100%),linear-gradient(278deg, rgba(89, 89, 89, 0.03) 0%, rgba(89, 89, 89, 0.03) 50%,rgba(26, 26, 26, 0.03) 50%, rgba(26, 26, 26, 0.03) 100%),linear-gradient(217deg, rgba(28, 28, 28, 0.03) 0%, rgba(28, 28, 28, 0.03) 50%,rgba(202, 202, 202, 0.03) 50%, rgba(202, 202, 202, 0.03) 100%),linear-gradient(129deg, rgba(23, 23, 23, 0.03) 0%, rgba(23, 23, 23, 0.03) 50%,rgba(244, 244, 244, 0.03) 50%, rgba(244, 244, 244, 0.03) 100%),linear-gradient(90deg, rgb(1, 64, 149),rgb(198, 5, 91));
+    /* background-image: linear-gradient(324deg, transparent 0%, transparent 45%,rgba(186, 186, 186,0.04) 45%, rgba(186, 186, 186,0.04) 47%,transparent 47%, transparent 100%),linear-gradient(208deg, transparent 0%, transparent 40%,rgba(186, 186, 186,0.04) 40%, rgba(186, 186, 186,0.04) 80%,transparent 80%, transparent 100%),linear-gradient(202deg, transparent 0%, transparent 20%,rgba(186, 186, 186,0.04) 20%, rgba(186, 186, 186,0.04) 40%,transparent 40%, transparent 100%),linear-gradient(338deg, transparent 0%, transparent 10%,rgba(186, 186, 186,0.04) 10%, rgba(186, 186, 186,0.04) 72%,transparent 72%, transparent 100%),linear-gradient(90deg, rgb(34,34,34),rgb(34,34,34)); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/* Header styles */
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Guitar section styles */
+
+section.guitar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url('../images/guitarH.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+section.guitar div.ropes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.guitar div.ropes > div{
+    width: 60%;
+    height: 4px;
+    background: #ffffff;
+    margin: 0.59% 0;
+}
+section.guitar div.ropes > div:nth-child(1){
+    animation: shakeY 1s;
+}
+section.guitar div.ropes > div:nth-child(2){
+    position: relative;
+    top: 1px;
+    animation: shakeY 1s 0.4s;
+}
+section.guitar div.ropes > div:nth-child(3){
+    position: relative;
+    top: 3px;
+    animation: shakeY 1s 0.8s;
+}
+section.guitar div.ropes > div:nth-child(4){
+    position: relative;
+    top: 5px;
+    animation: shakeY 1s 1.2s;
+}
+section.guitar div.ropes > div:nth-child(5){
+    position: relative;
+    top: 7px;
+    animation: shakeY 1s 1.6s;
+}
+section.guitar div.ropes > div:hover{
+    cursor: pointer;
+    background: red;
+}
+
+/* informations section styles  */
+
+section.informations{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+div.information_buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+div.information_buttons > div{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
