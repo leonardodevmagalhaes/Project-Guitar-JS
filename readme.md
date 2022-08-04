@@ -2,6 +2,9 @@
 
 <h1 align="center"> <img src="./images/logoTipo.png"> </h1>
 
+<h1 align="center"> <img width="70%" src="./images/gif.gif"> </h1>
+
+
 ## 🚩 Sobre:
 
 O projeto Guitar JS é uma iniciativa criada para testar meus conhecimentos sobre desenvolvimento FrontEnd.
